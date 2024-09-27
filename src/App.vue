@@ -2,6 +2,6 @@
 import MainLayout from "./layouts/MainLayout.vue";
 </script>
 
-<template><MainLayout /></template>
+<template><MainLayout class="text-dark" /></template>
 
 <style scoped></style>

@@ -42,7 +42,7 @@ function closeMenu() {
 
     <!-- Burger Menu for Mobile -->
     <div
-      class="desktop:hidden flex flex-col gap-y-2 cursor-pointer relative z-10 mt-5 mr-3"
+      class="desktop:hidden flex flex-col gap-y-2 cursor-pointer relative z-[31] mt-5 mr-3"
       @click="toggleMenu"
     >
       <div
@@ -73,15 +73,15 @@ function closeMenu() {
     <!-- Mobile Navigation -->
     <nav
       :class="[
-        'fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 flex flex-col items-center justify-center space-y-6 transform transition-transform duration-500',
+        'fixed z-30 top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 flex flex-col items-center justify-center space-y-6 transform transition-transform duration-500',
         isMenuOpen ? 'translate-x-0' : '-translate-x-full',
       ]"
     >
-      <router-link to="/" class="text-white text-2xl" @click="closeMenu"
-        >Home</router-link
-      >
       <router-link to="/works" class="text-white text-2xl" @click="closeMenu"
         >Works</router-link
+      >
+      <router-link to="/Blog" class="text-white text-2xl" @click="closeMenu"
+        >Blog</router-link
       >
       <router-link to="/contact" class="text-white text-2xl" @click="closeMenu"
         >Contact</router-link

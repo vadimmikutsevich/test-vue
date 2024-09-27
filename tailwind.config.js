@@ -8,6 +8,7 @@ export default {
         primary: "#FF6464",
         secondary: "#00A8CC",
         light: "#8695A4",
+        sky: "#EDF7FA",
       },
     },
     screens: {
