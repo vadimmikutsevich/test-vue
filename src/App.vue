@@ -1,8 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MainLayout from "./layouts/MainLayout.vue";
+</script>
 
-<template>
-  <h1 class="text-orange-600 mt-2">Vadzim</h1>
-  <router-view />
-</template>
+<template><MainLayout /></template>
 
 <style scoped></style>
